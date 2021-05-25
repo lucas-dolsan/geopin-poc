@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html style="height: 100%; margin: 0; padding: 0;">
+  <head>
+    <title>Directly Accessing Street View Data</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="index.js"></script>
+  </head>
+  <body style="height: 100%; margin: 0; padding: 0">
+    <div id="map" style="width: 45%; height: 100%; float: left"></div>
+    <div id="pano" style="width: 45%; height: 100%; float: left"></div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=INSERT_HERE_YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+  </body>
+</html>
